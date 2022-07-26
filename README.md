@@ -5,7 +5,7 @@
 [![Twitter: anis\_marrouchi](https://img.shields.io/twitter/follow/anis\_marrouchi.svg?style=social)](https://twitter.com/anis\_marrouchi)
 
 > Generate react components based on HTML templates using [Kodyfire](https://github.com/nooqta/kodyfire).
-
+![react-kodyfire demo](assets/react-kodyfire.gif)
 ### 🏠 [Homepage](https://github.com/nooqta/kodyfire)
 
 ## Requirements
