@@ -4,7 +4,7 @@
   "rootDir": "out",
   "concepts": [
     {
-      "name": "concept",
+      "name": "component",
       "outputDir": "",
       "template": {
         "path": "templates/",

@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+<%=#if cssModule %>
+import './<%= lowercase name%>.module.css';
+<%=/if %>
 
-
-class COMPONENT_NAME extends Component {
+class <%= classify name %> extends Component {
   render() {
     return <div />;
   }
 }
 
-export default COMPONENT_NAME;
+export default <%= classify name %>;
