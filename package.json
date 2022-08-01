@@ -1,7 +1,7 @@
 {
   "name": "react-kodyfire",
- "version": "0.0.9",
-  "description": "Generate x with react kodyfire",
+ "version": "0.0.10",
+  "description": "Generate React component from the terminal with react kodyfire",
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
