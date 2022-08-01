@@ -3,7 +3,7 @@ import { join, relative } from 'path';
 
 import { Concept as BaseConcept } from 'basic-kodyfire';
 import { Engine } from './engine';
-export class Component   extends BaseConcept {
+export class Component extends BaseConcept {
   constructor(concept: Partial<IConcept>, technology: ITechnology) {
     super(concept, technology);
     this.engine = new Engine();

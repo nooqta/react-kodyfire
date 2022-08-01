@@ -57,6 +57,55 @@ kody run -s kody-react.json
 - `ccsModule` _boolean_ - if a css module file should be created.
 - `outputDir` _string_ - The output directory
 
+#### `class` 
+
+> Generates a typescript class
+
+##### Params
+
+- `name` _string_ - class name. Default filename
+- `template` _enum_ - template name to use. Only one by default.
+- `implements` _string_ - Interface(s) to implement
+- `extends` _string_ - class(es) to extend.
+- `properties` [_Property[]_](#property) - list of properties
+- `methods` [_Method[]_](#method) - list of methods
+- `hasConstructor` _boolean_ - if class should have a constructor
+- `args` _{name: string, type: string}_ - List of argument to pass to the constructor. `hasConstructor` must be true.
+- `outputDir` _string_ - The output directory
+
+#### `interface` 
+
+> Generates a typescript interface
+
+##### Params
+
+- `name` _string_ - class name. Default filename
+- `template` _enum_ - template name to use. Only one by default.
+- `extends` _string_ - class(es) to extend.
+- `properties` [_Property[]_](#property) - list of properties
+- `outputDir` _string_ - The output directory
+
+#### `tsconfig` 
+
+> Generates a tsconfig file
+##### Params
+
+- `name` [__enum__](#Tsconfigs) - The tsconfig  configuration name
+- `outputDir` _string_ - The output directory
+
+
+###### Tsconfigs
+Refer to [this reference](https://github.com/tsconfig/bases/tree/main/bases) for a list of available tsconfig templates
+###### Property
+- `name` _string_ - property name
+- `type` _string_ - property type
+- `optional` _boolean_ - if the property is optional when constructing an object
+
+
+###### Method
+- `name` _string_ - method name
+- `params` _{name: string, type: string}_ - list of method arguments. Leave empty if none
+- `returnType` _string_ - Return type (example: string, number, void)
 ## 📅 Future Features
 
 - Generate `test`

@@ -1,3 +1,5 @@
+import { schema as tsSchema } from 'typescript-kodyfire'
+
 export const concept = {
   type: 'object',
   properties: {
@@ -46,6 +48,7 @@ export const componentArray = {
 export const schema = {
   type: 'object',
   properties: {
+    ...tsSchema.properties,
     project: { type: 'string' },
     name: { type: 'string' },
     rootDir: { type: 'string' },

@@ -169,6 +169,28 @@ export declare const schema: {
                 };
             };
         };
+        class: {
+            type: string;
+            items: any;
+        };
+        interface: {
+            type: string;
+            items: any;
+        };
+        tsconfig: {
+            type: string;
+            items: {
+                type: string;
+                properties: {
+                    name: {
+                        enum: any[];
+                    };
+                    outputDir: {
+                        type: string;
+                    };
+                };
+            };
+        };
     };
     required: string[];
 };

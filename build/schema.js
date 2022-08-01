@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.schema = exports.componentArray = exports.component = exports.conceptArray = exports.concept = void 0;
+const typescript_kodyfire_1 = require("typescript-kodyfire");
 exports.concept = {
     type: 'object',
     properties: {
@@ -46,13 +47,7 @@ exports.componentArray = {
 };
 exports.schema = {
     type: 'object',
-    properties: {
-        project: { type: 'string' },
-        name: { type: 'string' },
-        rootDir: { type: 'string' },
-        concept: exports.conceptArray,
-        component: exports.componentArray,
-    },
+    properties: Object.assign(Object.assign({}, typescript_kodyfire_1.schema.properties), { project: { type: 'string' }, name: { type: 'string' }, rootDir: { type: 'string' }, concept: exports.conceptArray, component: exports.componentArray }),
     required: ['name'],
 };
 //# sourceMappingURL=schema.js.map
