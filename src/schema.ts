@@ -3,12 +3,25 @@ import { schema as tsSchema } from 'typescript-kodyfire'
 export const concept = {
   type: 'object',
   properties: {
-    name: { type: 'string' },
+    name: { type: 'string', description: 'Name of the component' },
     template: {
       type: 'string',
-      enum: ['sample.html.template'],
+      description: 'Name of the template',
+      enum: [
+        'functional.js.template',
+        'class.js.template',
+        'pure-class.js.template',
+      ],
+      default: 'functional.js.template'
     },
-    outputDir: { type: 'string' },
+    extension: {
+      description: 'Extension of the file (default: js)',
+      enum: ['js', 'jsx', 'tsx', 'ts'],
+      default: 'js',
+    },
+    isFolder: { type: 'boolean', default: false, description: 'Is a folder. Will include an index for imports.' },
+    cssModule: { type: 'boolean', default: false, description: 'Include a css module file.' },
+    outputDir: { type: 'string', default: 'src/components' },
   },
 };
 
