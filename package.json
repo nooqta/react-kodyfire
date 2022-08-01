@@ -1,6 +1,6 @@
 {
   "name": "react-kodyfire",
-  "version": "0.0.8",
+ "version": "0.0.9",
   "description": "Generate x with react kodyfire",
   "main": "build/index.js",
   "scripts": {
