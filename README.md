@@ -23,6 +23,12 @@ npm install react-kodyfire
 
 ## Usage
 
+### Method 1(Quickest): As a generator
+In order to generate your artifacts. The syntax is `kody generate|g [kody] [concept]`. If you ommit kody and concept the assistant will prompt you to select them. As an example, run the following command from your terminal:
+```sh
+kody generate react component
+```
+### Method 2: As a kody project
 Refer to the kodyfire [install a kody](https://github.com/nooqta/kodyfire#install-a-kody) section.
 Once your project is initialized and ready for kody,
 generate your React concept using the `kody ride` command or manually. As an example, A declaration for a react component concept might look like the following: 
