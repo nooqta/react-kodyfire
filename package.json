@@ -1,6 +1,6 @@
 {
   "name": "react-kodyfire",
-  "version": "0.1.32",
+  "version": "0.1.33",
   "description": "Generate React component from the terminal with react kodyfire",
   "main": "build/index.js",
   "scripts": {
